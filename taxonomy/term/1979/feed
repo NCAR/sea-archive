@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://sea.ucar.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>SEA - Other topics</title>
+ <link>https://sea.ucar.edu/taxonomy/term/1979</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Java in instrument control software</title>
+ <link>https://sea.ucar.edu/forums/java-instrument-control-software</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;I&#039;m an advocate of using Java.  I use Java and IDL in the instrument data processing pipelines I create.  I&#039;ve seen Java used more and more over the recent years in astronomical image processing and pipelines.  The European Space Agency has a number of interesting projects in development primarily using Java.
+
+It&#039;s also interesting that Java is being used in realtime instrument control systems in astronomy.  I&#039;ve learned of this in several international projects.  The big ATST solar telescope project is advocating its use.
+
+&lt;a href=&quot;http://adsabs.harvard.edu/full/2000ASPC..216..271A&quot;&gt;Here&#039;s an older paper&lt;/a&gt; on using XML and Java in this context.
+
+==Leonard&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forums/other-topics&quot;&gt;Other topics&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
+ <pubDate>Mon, 25 Oct 2010 16:24:57 +0000</pubDate>
+ <dc:creator>sitongia</dc:creator>
+ <guid isPermaLink="false">515 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/forums/java-instrument-control-software#comments</comments>
+</item>
+</channel>
+</rss>

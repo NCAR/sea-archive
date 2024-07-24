@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://sea.ucar.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>SEA - Parallel Programming in Fortran with MPI and OpenMP</title>
+ <link>https://sea.ucar.edu/taxonomy/term/1981</link>
+ <description></description>
+ <language>en</language>
+</channel>
+</rss>

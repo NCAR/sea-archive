@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://sea.ucar.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>SEA - Introduction to Fortran 90</title>
+ <link>https://sea.ucar.edu/taxonomy/term/1980</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>code ex5.f90 in example of f90-2/pointers/internal could not be compiled</title>
+ <link>https://sea.ucar.edu/forums/code-ex5f90-example-f90-2pointersinternal-could-not-be-compiled</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hi there, &lt;/p&gt;
+&lt;p&gt;I tried to compiled the example ex5.f90 in /glade/home/dnagle/f90-2/pointers/internal. But it has problem.&lt;/p&gt;
+&lt;p&gt;fortcom: Error: ex5.f90, line 26: Object is not a pointer object   [PA]&lt;br /&gt;
+pa( 0:, 0:) =&amp;gt; a&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forums/sea-courses/introduction-fortran-90&quot;&gt;Introduction to Fortran 90&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
+ <pubDate>Mon, 13 Feb 2012 21:11:26 +0000</pubDate>
+ <dc:creator>gchen</dc:creator>
+ <guid isPermaLink="false">611 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/forums/code-ex5f90-example-f90-2pointersinternal-could-not-be-compiled#comments</comments>
+</item>
+<item>
+ <title>Fortran 90 introduction part II:  can not find intrinsic module</title>
+ <link>https://sea.ucar.edu/forums/fortran-90-introduction-part-ii-can-not-find-intrinsic-module</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hi there,&lt;/p&gt;
+&lt;p&gt;I try to compile the fortran code ex1.90 in /glade/home/dnagle/f90-2/intrinsics.&lt;/p&gt;
+&lt;p&gt;What I did is:&lt;br /&gt;
+ifort -o ex1 ex1.f90&lt;/p&gt;
+&lt;p&gt;It seems to me that there is no intrinsic module.&lt;/p&gt;
+&lt;p&gt;How to compile the example on mirage?&lt;/p&gt;
+&lt;p&gt;Thanks.&lt;/p&gt;
+&lt;p&gt;Guangshan&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forums/sea-courses/introduction-fortran-90&quot;&gt;Introduction to Fortran 90&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
+ <pubDate>Mon, 13 Feb 2012 17:26:51 +0000</pubDate>
+ <dc:creator>gchen</dc:creator>
+ <guid isPermaLink="false">610 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/forums/fortran-90-introduction-part-ii-can-not-find-intrinsic-module#comments</comments>
+</item>
+<item>
+ <title>Fortran 90 course</title>
+ <link>https://sea.ucar.edu/forums/fortran-90-course</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Please feel free to post your Fortran questions in the forums. &lt;/p&gt;&lt;p&gt;We will try to answer your questions as soon as possible.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p class=&quot;pageTitle&quot;&gt;User Services Section&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forums/sea-courses/introduction-fortran-90&quot;&gt;Introduction to Fortran 90&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
+ <pubDate>Wed, 16 Feb 2011 17:57:28 +0000</pubDate>
+ <dc:creator>siliu</dc:creator>
+ <guid isPermaLink="false">528 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/forums/fortran-90-course#comments</comments>
+</item>
+</channel>
+</rss>

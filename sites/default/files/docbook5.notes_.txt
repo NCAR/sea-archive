@@ -1,0 +1,329 @@
+		DocBook 5.0 Tools Installation
+		------------------------------
+
+How to install and use a DocBook 5.0 tool chain
+-----------------------------------------------
+This is what I did to set up a DocBook 5.0 tool chain on Linux from scratch.
+These packages may be available as part of various Linux distributions.
+
+NOTE: This reference assumes that the tcsh shell is being used.
+
+================================================================================
+References
+----------
+        DocBook
+                (main site)     http://docbook.org/
+                (DocBook 5.0)   http://docbook.org/schemas/5x
+
+	DocBook 5: The Definitive Guide
+		(online version) http://www.docbook.org/tdg5/
+		(print version)  http://shop.oreilly.com/product/9780596805012.do
+
+	DocBook XSL stylesheets
+		http://sourceforge.net/projects/docbook/files/
+
+	DocBook XSL: The Complete Guide
+		http://www.sagehill.net/book-description.html
+
+	W3C XML Entity Declarations
+		http://www.w3.org/2003/entities/
+
+	Saxon XSLT processor
+		http://saxon.sourceforge.net/
+
+	Xerces Java XML parser
+		http://xerces.apache.org/xerces2-j/
+
+	Apache FOP
+		http://xmlgraphics.apache.org/fop/
+
+	FOP XML Hyphenation Patterns
+		http://offo.sourceforge.net/hyphenation/
+
+        Docbook2X format converter
+                http://docbook2x.sourceforge.net/
+
+        Jing XML Validator
+                https://code.google.com/p/jing-trang/
+
+        DiffMk XML change bar generator
+                http://sourceforge.net/projects/diffmk/files/latest/download
+                (NOTE: FOP does not yet support the change-bar-{start,end} FO elements.)
+
+================================================================================
+User Environment
+----------------
+The other helper scripts assume the DB5 environment variable is set to the
+correct installation location of the DocBook 5.0 environment.
+
+Here is some user environment configuration from my tcsh startup processing:
+
+# DocBook Stuff
+set db5 = /usr/local/docbook-5.0
+if (-d $db5) then
+        setenv DB5 $db5
+	#set -f path = ( \
+	#	$DB5/bin \
+	#	$DB5/fop-1.1 \
+	#	$path \
+	#	)
+
+        if (-d $DB5/java) then
+                if ( $?CLASSPATH ) then
+                        set cp = ($CLASSPATH:as/:/ /)
+                else
+                        set cp = ()
+                endif
+
+                set nonomatch=1
+                set x = $DB5/java/*.jar
+                unset nonomatch
+                set noglob
+                if ("$x" != $DB5/java/\*.jar) then
+                        set -f cp = ($x $cp)
+                endif
+                unset noglob
+
+                set -f cp = ($DB5/java $cp)
+                set x = "$cp"
+                setenv CLASSPATH $x:as/ /:/
+                unset cp
+                unset x
+        endif
+endif
+
+unset db5
+
+Java
+----
+Minimum of JDK/SDK 1.5 is required.  Security issues means you really
+need the latest JDK/SDK installed.
+
+Perl
+----
+Various perl XML modules (and their dependencies) may be needed by the Docbook2X stuff.
+perl-XML-NamespaceSupport
+perl-XML-Parser
+perl-XML-SAX
+
+================================================================================
+Installation
+------------
+Prepare suitable locations for the source archives and the installation:
+
+        setenv DB5 /usr/local/docbook-5.0
+        mkdir $DB5
+        set DBSRC=/usr/local/src/docbook5
+        mkdir $DBSRC
+
+DocBook Schemas
+---------------
+The DocBook schemas define the format of DocBook XML files.
+
+	wget -nd -nH -P $DBSRC http://www.docbook.org/xml/5.0/docbook-5.0.zip
+        unzip -d $DB5:h $DBSRC/docbook-5.0.zip
+
+W3C XML entities
+----------------
+The W3C XML entities define various glyphs that are not typically available from a
+keyboard.  However, since the tools understand (or tolerate) UTF-8, it may be easier
+to use Unicode directly via X compose key sequences such as <Multi_key> <less> <equal>
+producing "≤".
+
+If the xmlcharent RPM is available, you could use it instead, possibly
+by referring to "ISO 8879:1986//ENTITIES" instead of "http://www.w3.org/2003/entities/2007/".
+
+        mkdir $DB5/w3c-entities
+        wget -r -nd -nH -np -P $DB5/w3c-entities http://www.w3.org/2003/entities/2007/
+        wget -nH -nd -P $DB5/w3c-entities http://www.w3.org/2003/entities/2007xml/catalog
+
+Edit $DB5/w3c-entities/catalog and set the value for the URI in the rewritePrefix to
+"file:///usr/local/docbook-5.0/w3c-entities/".  Make sure this catalog is referenced in
+CatalogManager.properties in the $DB5/java directory (see the Saxon section below).
+
+*** catalog.orig        2013-10-23 16:11:59.280713776 -0600
+--- catalog     2013-10-23 16:12:15.452611962 -0600
+***************
+*** 20,25 ****
+  <rewriteSystem
+    id = "w3centities"
+    systemIdStartString = "http://www.w3.org/2003/entities/2007/"
+!   rewritePrefix = "file:///etc/xml/w3c-entities/" />
+  
+  </catalog>
+--- 20,25 ----
+  <rewriteSystem
+    id = "w3centities"
+    systemIdStartString = "http://www.w3.org/2003/entities/2007/"
+!   rewritePrefix = "file:///usr/local/docbook-5.0/w3c-entities/" />
+  
+  </catalog>
+
+
+================================================================================
+DocBook XSL
+-----------
+The DocBook eXtensible Style Sheet definitions are required to convert
+your DocBook sources to the XSL-FO intermediate format or other formats
+such as HTML.  There are two sets of style sheets, one that supports
+XML namespaces, the other that does not.
+
+Install the style sheets with namespace support:
+
+        wget -nd -nH -P $DBSRC http://sourceforge.net/projects/docbook/files/docbook-xsl-ns/1.78.1/docbook-xsl-ns-1.78.1.tar.bz2
+        tar xfj $DBSRC/docbook-xsl-ns-1.78.1.tar.bz2 -C $DB5
+
+Note that there is only one version of the documentation files and they get
+placed under $DB5/docbook-xsl-1.78.1/doc.
+
+        http://sourceforge.net/projects/docbook/files/docbook-xsl-doc/1.78.1/docbook-xsl-doc-1.78.1.tar.bz2/download
+        tar xfj $DBSRC/docbook-xsl-doc-1.78.1.tar.bz2 -C $DB5
+
+
+If you are using older DocBook sources (DocBook4 era) that don't understand XSL
+namespaces:
+
+        wget -nd -nH -P $DBSRC http://sourceforge.net/projects/docbook/files/docbook-xsl/1.78.1/docbook-xsl-1.78.1.tar.bz2
+        tar xfj $DBSRC/docbook-xsl-1.78.1.tar.bz2 -C $DB5
+
+
+Saxon
+-----
+DocBook XSL requires an XSLT processor.  Currently I am using the older Saxon
+6.5.5 version which provides XSLT 1.0 support.  A later version of Saxon may
+be usable, but I have not tested this at the moment.  Other XSLT processors
+can be used.  See this page for installation details:
+http://www.sagehill.net/docbookxsl/InstallingAProcessor.html#InstallSaxon
+
+        wget -nd -nH -P $DBSRC http://prdownloads.sourceforge.net/saxon/saxon6-5-5.zip
+        mkdir $DB5/saxon-6.5.5
+        unzip -d $DB5/saxon-6.5.5 $DBSRC/saxon6-5-5.zip
+
+I also installed the Xerces2 XML parser, needed to perform XML XInclude
+processing as described in the installation page.
+
+        wget -nd -nH -P $DBSRC http://apache.mirrors.lucidnetworks.net//xerces/j/binaries/Xerces-J-bin.2.11.0.tar.gz
+        tar xfz $DBSRC/Xerces-J-bin.2.11.0.tar.gz -C $DB5/java --strip-components=1 xerces-2_11_0/{xercesImpl.jar,resolver.jar}
+
+Install the CatalogManager.properties in $DB5/java.  Edit it if necessary.
+Install the local-cat.xml in $DB5.  Edit it if necessary.
+Install the saxon655 wrapper script in $DB5/bin.  Edit it to reflect paths as appropriate.
+Install the saxon655-nons wrapper script in $DB5/bin if non-namespace aware (DocBook 4)
+file must be processed.  Edit it to reflect paths as appropriate.
+
+
+FOP
+---
+FOP is the Apache Formatting Objects Processor that converts the XSL-FO
+(formatting objects) intermediate format produced by Saxon from the
+DocBook style sheets into the desired output format, PDF in this case.
+
+Download the FOP "binary" distribution, fop-1.1-bin.tar.gz, from a mirror site.
+
+        http://xmlgraphics.apache.org/fop/download.html#binary
+
+        tar xfz $DBSRC/fop-1.1-bin.tar.gz -C $DB5
+
+Set the default page size add any local font directories you wish to use to the
+FOP configuration file $DB5/fop-1.1/conf/fop.xconf:
+
+*** fop.xconf.orig      2013-10-23 09:32:34.653892950 -0600
+--- fop.xconf   2013-10-23 14:08:39.608864040 -0600
+***************
+*** 25,31 ****
+    
+    <!-- Default page-height and page-width, in case
+         value is specified as auto -->
+!   <default-page-settings height="11in" width="8.26in"/>
+    
+    <!-- Information for specific renderers -->
+    <!-- Uses renderer mime type for renderers -->
+--- 25,31 ----
+    
+    <!-- Default page-height and page-width, in case
+         value is specified as auto -->
+!   <default-page-settings height="11in" width="8.5in"/>
+    
+    <!-- Information for specific renderers -->
+    <!-- Uses renderer mime type for renderers -->
+***************
+*** 46,51 ****
+--- 46,52 ----
+  
+        <fonts>
+          <!-- embedded fonts -->
++         <directory recursive="true">/usr/share/fonts/truetype</directory>
+          <!--
+          This information must exactly match the font specified
+          in the fo file. Otherwise it will use a default font.
+
+Install the hypenation patterns file.  Download
+
+        wget -nd -nH -P $DBSRC http://sourceforge.net/projects/offo/files/offo-hyphenation-utf8/0.1/offo-hyphenation-fop-stable-utf8.zip
+        unzip -j -d $DB5/fop-1.1/lib $DBSRC/offo-hyphenation-fop-stable-utf8.0.zip offo-hyphenation-fop-stable-utf8/fop-hyph.jar
+
+Here is the non-UTF-8 hypenation pattern information in case the UTF-8 version doesn't work right:
+
+        wget -nd -nH -P $DBSRC http://sourceforge.net/projects/offo/files/offo-hyphenation/2.0/offo-hyphenation-binary_v2.0.zip
+        unzip -j -d $DB5/fop-1.1/lib $DBSRC/offo-hyphenation-binary_v2.0.zip offo-hyphenation-binary/fop-hyph.jar
+
+
+Docbook2X
+---------
+You can use the docbook2man program (part of the docbook2X project) to convert
+DocBook RefEntry sections into man page source files.  docbook2man depends, by
+default, on xsltproc.  It can use Saxon or Xalan-Java also.
+
+        wget -nd -nH -P $DBSRC http://sourceforge.net/projects/docbook2x/files/docbook2x/0.8.8/docbook2X-0.8.8.tar.gz
+        tar xfz $DBSRC/docbook2X-0.8.8.tar.gz -C $DBSRC
+        cd $DBSRC/docbook2X-0.8.8
+        ./configure --prefix=$DB5
+        make
+        make install
+
+NOTE: needed to fix up $DB5/bin/db2x_manxml after intallation to change
+the "${prefix}" values to "/usr/local/docbook-5.0" in the configuration
+section at the top.
+
+
+XML Validtor
+------------
+Being able to validate the correctness of your DocBook source files is very helpful
+when the output is wrong.  I am using the Jing XML validator currently.
+
+        wget -nd -nH -P $DBSRC -O jing-20091111.zip 'http://code.google.com/p/jing-trang/downloads/detail?name=jing-20091111.zip&can=2&q='
+        unzip -d $DB5 $DBSRC/jing-20091111.zip
+
+
+An older version of the Sun/Oracle Multi-Schema XML Validator worked also.
+	wget -nd -nH http://java.net/downloads/msv/releases/msv.20090415.zip
+        unzip -d $DB5 $DBSRC/msv.20090415.zip
+
+================================================================================
+Example commands
+----------------
+xsltproc --version
+xsltproc --output test.html $db/docbook-xsl-ns-1.78.1/html/docbook.xsl test.xml
+
+saxon
+java net.sf.saxon.Transform -versionmsg:off -xi:on -xsl:$db/docbook-xsl-ns-1.78.1/html/docbook.xsl -s:test.xml -o:test.html
+
+
+
+MSV
+XInclude
+java -jar /usr/local/docbook-5.0/msv-20090415/msv.jar /usr/local/docbook-5.0/rng/docbookxi.rng test.xml
+
+non-Xinclude
+java -jar /usr/local/docbook-5.0/msv-20090415/msv.jar /usr/local/docbook-5.0/rng/docbook.rng test.xml
+
+FOP/PDF
+xsltproc --xinclude --output test.fo $db/docbook-xsl-ns-1.78.1/fo/docbook.xsl test.xml
+
+java net.sf.saxon.Transform -versionmsg:off -xi:on -xsl:$db/docbook-xsl-ns-1.78.1/fo/docbook.xsl -s:test.xml -o:test.fo
+
+java net.sf.saxon.Transform -x:org.apache.xml.resolver.tools.ResolvingXMLReader -y:org.apache.xml.resolver.tools.ResolvingXMLReader -r:org.apache.xml.resolver.tools.CatalogResolver -versionmsg:off -xsl:custom-fo.xsl -s:man.xml -o:man.fo
+
+fop -fo test.fo -pdf test.pdf
+
+fop -c /usr/local/docbook-5.0/fop-1.1/conf/fop.xconf -fo man.fo -pdf man.pdf

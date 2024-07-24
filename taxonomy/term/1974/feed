@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://sea.ucar.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>SEA - Successful projects</title>
+ <link>https://sea.ucar.edu/taxonomy/term/1974</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Jeff Alipit  launched the CISL Drupal site on July 30 and it&#039;s a big improvement over CISL&#039;s old site.</title>
+ <link>https://sea.ucar.edu/forums/jeff-alipit-launched-cisl-drupal-site-july-30-and-its-big-improvement-over-cisls-old-site</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;h3&gt;Congratulations to Jeff&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forums/successful-projects&quot;&gt;Successful projects&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 06 Aug 2010 17:12:48 +0000</pubDate>
+ <dc:creator>siliu</dc:creator>
+ <guid isPermaLink="false">501 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/forums/jeff-alipit-launched-cisl-drupal-site-july-30-and-its-big-improvement-over-cisls-old-site#comments</comments>
+</item>
+</channel>
+</rss>

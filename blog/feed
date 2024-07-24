@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://sea.ucar.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>SEA blogs</title>
+ <link>https://sea.ucar.edu/blog</link>
+ <description>Mission:  Aliquam aliquet, est a ullamcorper condimentum, tellus nulla fringilla elit, a iaculis nulla turpis sed wisi. Fusce volutpat. Etiam sodales ante id nunc. To change this go to Administer Site &gt; Site Information.</description>
+ <language>en</language>
+<item>
+ <title>New Best Practices committee chairperson</title>
+ <link>https://sea.ucar.edu/new-best-practices-committee-chairperson</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The SEA is glad to announce that Alessandro Fanfarillo has volunteered and has been accepted as the new chairperson for the &lt;a href=&quot;/committees&quot; target=&quot;_self&quot;&gt;Best Practices committee&lt;/a&gt;. Welcome to the SEA, Alessandro!&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Wed, 25 Apr 2018 20:09:15 +0000</pubDate>
+ <dc:creator>ddvento</dc:creator>
+ <guid isPermaLink="false">1097 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/new-best-practices-committee-chairperson#comments</comments>
+</item>
+<item>
+ <title>2018 SEA conference wrap-up</title>
+ <link>https://sea.ucar.edu/2018-sea-conference-wrap</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;&lt;a href=&quot;/sites/default/files/2018_SEA_Conference-3000px.jpg&quot; target=&quot;_self&quot;&gt;&lt;img src=&quot;/sites/default/files/2018_SEA_Conference.jpg&quot; width=&quot;800&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The 2018 SEA conference has been a good success, with many interesting talks, great keynotes, lots of well attended tutorials. Many conference-goers expressed satisfaction about it. A survey has been sent to everybody and so far shows about 1/3 of the attendees rating it excellent, 1/3 very good and 1/3 good. All the involved admins did a fantastic job in making sure everything went smoothly.&lt;/p&gt;
+&lt;p&gt;There has been a total of 121 attendees, about 40% from NCAR. In 5 days there have been 31 talks, 14 tutorials, two symposia and one panel.&lt;/p&gt;
+&lt;p&gt;The greatest success of the event has been the symposia. Both of them covered important topics not addressed anywhere else (containers in an HPC environment and overlapping communication with computation in parallel computing). Participants to both asked to make them a yearly event, and we will be glad to do so. They also requested to engage more application developers since they have not properly represented. We will work with them to have a larger representation next year.&lt;/p&gt;
+&lt;p&gt;Given the success of the symposia, we will also experiment with a call for more of them from the community.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Wed, 11 Apr 2018 22:04:00 +0000</pubDate>
+ <dc:creator>ddvento</dc:creator>
+ <guid isPermaLink="false">1095 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/2018-sea-conference-wrap#comments</comments>
+</item>
+<item>
+ <title>Frontiers in Scientific Software - 2018 SEA conference</title>
+ <link>https://sea.ucar.edu/frontiers-scientific-software-2018-sea-conference</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The program for the 2018 SEA conference has been announced. The focus this year will be on Frontiers in Scientific Software. This could be the best SEA conference since the program started in 2012!&lt;/p&gt;
+&lt;p&gt;The conference will feature:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The always popular talks, on a variety of topics, including Data Analysis, HPC and cloud&lt;/li&gt;
+&lt;li&gt;Two high level keynotes&lt;/li&gt;
+&lt;li&gt;An incredibly rich offering of tutorials, on topic ranging from Deep Learning to Debugging and profiling HPC code; from data analysis and visualization with Python to probabilistic forecast&lt;/li&gt;
+&lt;li&gt;Last, but by any means not least, a first for SEA: two fantastic symposia&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;The first symposium is about Overlapping Communication with Computation, a must for anybody interested in parallel programming&lt;/li&gt;
+&lt;li&gt;The second symposium is about Containers in HPC, a unique opportunity for container developers and system administrators to discuss challenges, issues and features of deploying container in a production HPC environment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;p&gt;What are you waiting for to register? The URL? It&#039;s &lt;a href=&quot;https://sea.ucar.edu/conference/2018&quot; target=&quot;_self&quot;&gt;https://sea.ucar.edu/conference/2018&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 13 Feb 2018 15:39:29 +0000</pubDate>
+ <dc:creator>ddvento</dc:creator>
+ <guid isPermaLink="false">1084 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/frontiers-scientific-software-2018-sea-conference#comments</comments>
+</item>
+<item>
+ <title>We are Software Carpentry Affiliate</title>
+ <link>https://sea.ucar.edu/we-are-software-carpentry-affiliate</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;I&#039;m proud to announce that we&#039;ve just become Software Carpentry Affiliate!&lt;/p&gt;
+&lt;p&gt;In practice, that will mean that we will in-house Software Carpentry instructors and will host Software Carpentry Workshops (more than we have in the past). I&#039;ve a couple of people lined up for becoming instructors, but if you are thinking about it, please let me know, the more the merrier.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&quot;http://software-carpentry.org/scf/membership.html&quot;&gt;http://software-carpentry.org/scf/membership.html&lt;/a&gt; for details&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 10 Sep 2015 16:13:29 +0000</pubDate>
+ <dc:creator>ddvento</dc:creator>
+ <guid isPermaLink="false">878 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/we-are-software-carpentry-affiliate#comments</comments>
+</item>
+<item>
+ <title>Pictures of the 2015 SEA conference</title>
+ <link>https://sea.ucar.edu/pictures-2015-sea-conference</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Enjoy these pictures of our last conference! See also &lt;a href=&quot;https://www2.cisl.ucar.edu/2015-sea-conference-focuses-python&quot; target=&quot;_blank&quot;&gt;two&lt;/a&gt; interesting news &lt;a href=&quot;https://www2.cisl.ucar.edu/cisl-hosts-diversity-students-2015-sea-conference&quot; target=&quot;_blank&quot;&gt;reports&lt;/a&gt; on it.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://sea.ucar.edu/sites/default/files/JimHurrel_2015.jpg&quot; width=&quot;800&quot; height=&quot;533&quot; style=&quot;vertical-align: middle;&quot; /&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://sea.ucar.edu/sites/default/files/FernandoPerez_2015.jpg&quot; width=&quot;800&quot; height=&quot;533&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://sea.ucar.edu/sites/default/files/SeaConf_2015_group.jpg&quot; width=&quot;800&quot; height=&quot;533&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://sea.ucar.edu/sites/default/files/msi.jpg&quot; width=&quot;800&quot; height=&quot;533&quot; /&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 29 May 2015 16:29:58 +0000</pubDate>
+ <dc:creator>ddvento</dc:creator>
+ <guid isPermaLink="false">868 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/pictures-2015-sea-conference#comments</comments>
+</item>
+<item>
+ <title>SEA 2015 conference</title>
+ <link>https://sea.ucar.edu/sea-2015-conference</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The 2015 SEA conference has been announced! The call for speakers and tutorials is open! Check it out and submit yours at &lt;a title=&quot;2015 SEA conference website&quot; href=&quot;https://sea.ucar.edu/conference/2015&quot; target=&quot;_self&quot;&gt;https://sea.ucar.edu/conference/2015&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 27 Nov 2014 15:33:34 +0000</pubDate>
+ <dc:creator>ddvento</dc:creator>
+ <guid isPermaLink="false">753 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/sea-2015-conference#comments</comments>
+</item>
+<item>
+ <title>New Proposal Review Committee Chair</title>
+ <link>https://sea.ucar.edu/new-proposal-review-committee-chair</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;I&#039;m very happy to let you know that that &lt;a title=&quot;Srinath Vadlamani&#039;s bio&quot; href=&quot;/users/srinathv&quot; target=&quot;_self&quot;&gt;Srinath Vadlamani&lt;/a&gt; has volunteered for the role of Proposal Review Committee Chair, and his offer has been accepted by the Executive Committee.&lt;/p&gt;
+&lt;p&gt;&lt;a title=&quot;Srinath Vadlamani&#039;s bio&quot; href=&quot;/users/srinathv&quot; target=&quot;_self&quot;&gt;Srinath&lt;/a&gt; is willing to work with any current and future projects to establish software management plans. He is also willing to help identify NCAR personal skill sets that may compliment proposed projects with software components.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-taxonomy-vocabulary-20 field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;People: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/category/people/srinath&quot;&gt;Srinath&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
+ <pubDate>Mon, 18 Nov 2013 16:56:53 +0000</pubDate>
+ <dc:creator>ddvento</dc:creator>
+ <guid isPermaLink="false">703 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/new-proposal-review-committee-chair#comments</comments>
+</item>
+<item>
+ <title>New Best-Practices Committee Chair</title>
+ <link>https://sea.ucar.edu/new-best-practices-committee-chair</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;I&#039;m extremely excited to announce that &lt;a href=&quot;/users/jblomer&quot; target=&quot;_self&quot;&gt;Julianne Blomer&lt;/a&gt; has volunteered for the role of Best-Practices Committee Chair, and her offer has been accepted by the Executive Committee. She is already working on some ideas which we hope to present to the SEA community soon.&lt;/p&gt;&lt;p&gt;Please join me in welcoming Julianne in her active role for the SEA!&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Wed, 12 Jun 2013 18:09:40 +0000</pubDate>
+ <dc:creator>ddvento</dc:creator>
+ <guid isPermaLink="false">693 at https://sea.ucar.edu</guid>
+</item>
+<item>
+ <title>Picture of the SEA conference</title>
+ <link>https://sea.ucar.edu/picture-sea-conference</link>
+ <description>&lt;div class=&quot;field field-name-upload field-type-file field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;table class=&quot;sticky-enabled&quot;&gt;
+ &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Attachment&lt;/th&gt;&lt;th&gt;Size&lt;/th&gt; &lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+ &lt;tr class=&quot;odd&quot;&gt;&lt;td&gt;&lt;span class=&quot;file&quot;&gt;&lt;img class=&quot;file-icon&quot; alt=&quot;Image icon&quot; title=&quot;image/jpeg&quot; src=&quot;/modules/file/icons/image-x-generic.png&quot; /&gt; &lt;a href=&quot;https://sea.ucar.edu/sites/default/files/acIMG_9693small.jpg&quot; type=&quot;image/jpeg; length=299778&quot; title=&quot;acIMG_9693small.jpg&quot;&gt;acIMG_9693small.jpg&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;292.75 KB&lt;/td&gt; &lt;/tr&gt;
+ &lt;tr class=&quot;even&quot;&gt;&lt;td&gt;&lt;span class=&quot;file&quot;&gt;&lt;img class=&quot;file-icon&quot; alt=&quot;Image icon&quot; title=&quot;image/jpeg&quot; src=&quot;/modules/file/icons/image-x-generic.png&quot; /&gt; &lt;a href=&quot;https://sea.ucar.edu/sites/default/files/acIMG_9693.jpg&quot; type=&quot;image/jpeg; length=6701362&quot; title=&quot;acIMG_9693.jpg&quot;&gt;acIMG_9693.jpg&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;6.39 MB&lt;/td&gt; &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;&lt;a href=&quot;/sites/default/files/acIMG_9693.jpg&quot;&gt;&lt;img src=&quot;/sites/default/files/acIMG_9693small.jpg&quot; alt=&quot;&quot; width=&quot;600&quot; height=&quot;318&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Mon, 06 May 2013 19:19:24 +0000</pubDate>
+ <dc:creator>ddvento</dc:creator>
+ <guid isPermaLink="false">688 at https://sea.ucar.edu</guid>
+</item>
+<item>
+ <title>Program of 2013 SEA conference announced</title>
+ <link>https://sea.ucar.edu/program-2013-sea-conference-announced</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Check it out! At the time of this writing, all the talks have been announced and the agendas of the various tutorials are being posted (however each tutorial has already posted the abstract of an introductory talk, so you&#039;ll get the idea).&lt;/p&gt;&lt;p&gt;It&#039;s going to be a great conference, and it is also great value with mere $100 registration fee for the 5 days event! &lt;a href=&quot;/conference/2013&quot; target=&quot;_self&quot;&gt;Register&lt;/a&gt; and spread the word.&lt;/p&gt;&lt;p&gt;Hope to see you there.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 12 Feb 2013 17:31:15 +0000</pubDate>
+ <dc:creator>ddvento</dc:creator>
+ <guid isPermaLink="false">678 at https://sea.ucar.edu</guid>
+</item>
+</channel>
+</rss>

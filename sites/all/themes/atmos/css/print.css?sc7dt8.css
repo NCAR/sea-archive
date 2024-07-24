@@ -1,0 +1,111 @@
+/* --- REFORMAT --- */
+a,
+blockquote,
+div,
+input,
+li,
+ol,
+p,
+pre,
+textarea,
+ul {
+    color: #000000;
+    font-size: 15px;
+}
+
+body {
+    color: #000000;
+    width: 997px;
+    font-size: 15px;
+}
+
+body,
+body.admin-menu {
+    background-position: 0 -50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+.title {
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    font-weight: 700;
+}
+
+#block-block-68 {
+    background-color: #EEEEEE;
+    border: 1px solid #AAAAAA;
+    display: block;
+    height: auto;
+    margin: 0;
+    padding: 5px;
+    visibility: visible;
+}
+
+#block-block-68 .content {
+    font-weight: 700;
+}
+
+#center,
+.one-sidebar #center {
+    width: 940px;
+}
+
+#header {
+    margin-top: 40px;
+}
+
+#tabs-wrapper {
+    margin: 0 0 0 0;
+}
+
+#wrap {
+    margin-top: -50px;
+}
+
+.footernav p {
+    line-height: 15px;
+}
+
+.footernav p,
+.footernav .content,
+.node .content {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* --- HIDE --- */
+iframe,
+#_atssh,
+#admin-menu,
+#block-addthis-0,
+#block-block-94,
+#block-google_cse-0,
+#block-menu-menu-atmos-nav,
+#block-search,
+#homestate,
+#logintools,
+#navigation,
+#news-center-header,
+#news-center-header-search,
+#orgnav,
+#orgNavV1,
+#rightcol,
+#socialmedialinks_block_wrapper,
+#triptych-columns,
+#vp,
+.back-to-top,
+.footernav ul,
+.footernav ul li,
+.internal-header,
+.links ul,
+.links ul li,
+.offscreen,
+.tabs.primary {
+    display: none;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}

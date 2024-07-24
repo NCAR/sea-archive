@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://sea.ucar.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>siliu&#039;s blog</title>
+ <link>https://sea.ucar.edu/blogs/siliu</link>
+ <description>Mission:  Aliquam aliquet, est a ullamcorper condimentum, tellus nulla fringilla elit, a iaculis nulla turpis sed wisi. Fusce volutpat. Etiam sodales ante id nunc. To change this go to Administer Site &gt; Site Information.</description>
+ <language>en</language>
+<item>
+ <title>Advanced Topics in Fortran Programming </title>
+ <link>https://sea.ucar.edu/AdvancedFortran2012</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;div class=&quot;content clear-block&quot;&gt;&lt;div class=&quot;field field-type-text field-field-when&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;&lt;strong&gt;Date and Time: &lt;/strong&gt;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;July 11, 2012 - July 13, 2012    9:00-12:00am, 1:00-4:00pm&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-type-text field-field-where&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;&lt;strong&gt;Location: &lt;/strong&gt;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item odd&quot;&gt;Vislab at Mesa&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-type-text field-field-speaker&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;&lt;strong&gt;Speaker:&lt;/strong&gt; &lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item odd&quot;&gt;Dan Nagle&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;content clear-block&quot;&gt;Please check the &lt;a href=&quot;http://sea.ucar.edu/event/AdvancedFortran2012&quot;&gt;event page&lt;/a&gt; for more details and onlin-registration.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 01 Jun 2012 17:54:28 +0000</pubDate>
+ <dc:creator>siliu</dc:creator>
+ <guid isPermaLink="false">624 at https://sea.ucar.edu</guid>
+</item>
+</channel>
+</rss>

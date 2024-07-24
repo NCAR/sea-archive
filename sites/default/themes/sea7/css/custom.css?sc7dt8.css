@@ -1,0 +1,45 @@
+#header .block-menu li a.active-trail {
+  color: #FF9900;
+}
+
+.link-wrapper {
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #E3E4E6;
+}
+
+.link-wrapper .links {
+  margin-left: 0;
+}
+
+.link-wrapper .node-readmore.first {
+  padding-left: 0;
+}
+
+.view-current-seminars .views-row,
+.view-current-classes .views-row {
+  margin-bottom: 20px;
+ }
+
+.field {
+  margin-bottom: 10px;
+}
+
+#navigation .block_container,
+#navigation .content,
+#navigation .content ul li {
+  border: none;
+}
+
+/* temporarily  hiding sub-nav */
+#header {
+    height: 80px;
+}
+
+#header-wrap {
+  height: 120px;
+}
+
+#header-sub-nav {
+  height: 0;
+}

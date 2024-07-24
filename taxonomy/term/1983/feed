@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://sea.ucar.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>SEA - Software Carpentry Course </title>
+ <link>https://sea.ucar.edu/taxonomy/term/1983</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Would like to see this course presented again</title>
+ <link>https://sea.ucar.edu/forums/would-see-course-presented-again</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;(I&amp;#039;m enjoying the new SEA website.  I&amp;#039;ll try a post.)&lt;/p&gt;
+&lt;p&gt;I&amp;#039;ve been encouraging staff to learn more about good software engineering practices here in HAO.  I was excited to learn of this course, and several HAO scientists were interested.  Unfortunately, it was the same time as a two-day retreat with our new Directory.&lt;/p&gt;
+&lt;p&gt;Has interest in giving this course again been expressed?&lt;/p&gt;
+&lt;p&gt;Does the Software Carpentry website provide the same (or nearly the same) content (as webcasts, video, etc.) as the course, so that I could direct HAO staff to it?&lt;/p&gt;
+&lt;p&gt;Thanks,&lt;br /&gt;
+==Leonard&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forums/sea-courses/software-carpentry-course&quot;&gt;Software Carpentry Course &lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
+ <pubDate>Mon, 25 Oct 2010 16:01:26 +0000</pubDate>
+ <dc:creator>sitongia</dc:creator>
+ <guid isPermaLink="false">514 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/forums/would-see-course-presented-again#comments</comments>
+</item>
+<item>
+ <title>IDL profiler allows 77% speedup -- 55 to 18 minutes</title>
+ <link>https://sea.ucar.edu/forums/idl-profiler-allows-77-speedup-55-18-minutes</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;
+After completing the Software Carpentry class, one of the scientists in ACD reported:
+&lt;/p&gt;
+
+&lt;cite&gt;
+Right after the last class I tried the IDL profiler in one of my programs and by changing a couple of lines was able to make it run 77% faster.
+&lt;/cite&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forums/sea-courses/software-carpentry-course&quot;&gt;Software Carpentry Course &lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 07 Oct 2010 17:02:45 +0000</pubDate>
+ <dc:creator>vdean</dc:creator>
+ <guid isPermaLink="false">505 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/forums/idl-profiler-allows-77-speedup-55-18-minutes#comments</comments>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,637 @@
+/* Image Caption
+--------------------------------------------------*/
+.img-caption {
+    border-bottom: 2px solid #910F0F;
+    color: #003366;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.img-caption-right {
+    border-bottom: 2px solid #910F0F;
+    clear: both;
+    color: #003366;
+    float: right;
+    font-size: 12px;
+    margin: 0 0 10px 10px;
+    padding: 10px 0;
+    width: 375px;
+}
+
+/* Multimedia Slider
+--------------------------------------------------*/
+#content-footer {
+    clear: both;
+    margin: 15px 0 0 0;
+    width: 100%;
+}
+
+#leftControl {
+    background: transparent url('../images/slider_controls.png') no-repeat left center;
+    left: -35px;
+    top: -20px;
+}
+
+#rightControl {
+    background: transparent url('../images/slider_controls.png') no-repeat right center;
+    right: -35px;
+    top: -20px;
+}
+
+#slideshow {
+    margin: 0 auto;
+    position: relative;
+    width: 847px;
+}
+
+#slideshow #slidesContainer {
+    margin: 0 auto;
+    overflow: auto;
+    position: relative;
+    width: 860px;
+}
+
+#slideshow .slide {
+    margin: 0 auto;
+    width: 920px;
+}
+
+#slideshow .slide a.caption {
+    color: #666;
+    display: block;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 0;
+    text-decoration: none;
+}
+
+#slideshow .slide a.caption:hover {
+    text-decoration: underline;
+}
+
+#slideshow .slide a.caption span {
+    color: #666666 !important;
+}
+
+#slideshow .slide li {
+    background: none;
+    display: table-cell;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0 14px;
+    width: 190px;
+}
+
+#slideshow .slide li.first {
+    border-left: 0;
+    padding-left: 0;
+}
+
+#slideshow .slide li.last {
+    border-right: 0;
+    padding-right: 0;
+}
+
+#slideshow .slide ul {
+    display: table-row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#slideshow .slide .video-wrap {
+    background: #FFF;
+    margin: 0;
+    padding: 2px;
+    position: relative;
+}
+
+#slideshow .slide .video-wrap .play {
+    height: 35px;
+    left: 30px;
+    pointer-events: none;
+    position: absolute;
+    top: 20px;
+    width: 55px;
+}
+
+.control_slider {
+    cursor: pointer;
+    display: block;
+    height: 155px;
+    position: absolute;
+    text-indent: -10000px;
+    width: 30px;
+}
+
+/* VIEWS
+--------------------------------------------------*/
+.no-border .views-field-title {
+    border: medium none;
+}
+
+.views-row img {
+    float: left;
+    margin: 0 20px 15px 0;
+}
+
+.views-row-first {
+    border: medium none;
+}
+
+.views-field-field-image,
+.views-field-field-thumbnail-fid {
+    clear: left;
+    float: left;
+    margin: 0;
+}
+
+
+/* VIEWS SLIDESHOWS */
+.views-slideshow-controls-top {
+    float: left;
+    width: 172px;
+}
+
+.views_slideshow_main .views_slideshow_thumbnailhover_slide a {
+    margin: 0;
+    padding: 0;
+}
+
+.views_slideshow_main .views-field-body {
+    background-color: #F5F5F5;
+    color: #000000;
+    margin: -3px 0 0 0;
+    padding: 15px 10px 1px 10px;
+}
+
+.views_slideshow_thumbnailhover_controls.views_slideshow_controls {
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 17px;
+    background-color: #EEEEEE;
+    border: 1px solid #d2d2d2;
+    border-bottom: #b4b4b4;
+    border-top: #e4e4e4;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px #CCCCCC;
+    padding: 5px 10px 8px;
+    margin: 0 10px 15px 0;
+    text-align: center;
+}
+
+.views_slideshow_thumbnailhover_controls.views_slideshow_controls a,
+.views_slideshow_thumbnailhover_controls.views_slideshow_controls a:link,
+.views_slideshow_thumbnailhover_controls.views_slideshow_controls a:visited,
+.views_slideshow_thumbnailhover_controls.views_slideshow_controls a:hover,
+.views_slideshow_thumbnailhover_controls.views_slideshow_controls a:focus,
+.views_slideshow_thumbnailhover_controls.views_slideshow_controls a:active {
+    color: #5a5a5a;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.views_slideshow_thumbnailhover_controls.views_slideshow_controls a:hover,
+.views_slideshow_thumbnailhover_controls.views_slideshow_controls a:focus {
+    background: #dedede;
+}
+
+.views_slideshow_thumbnailhover_div_breakout_teaser {
+    float: left;
+    margin: 0 5px 5px 0;
+    padding: 0;
+}
+
+.views_slideshow_thumbnailhover_play,
+.views_slideshow_thumbnailhover_pause {
+    background: #fff url(../images/buttons-bkg.png) 0 0 repeat-x;
+    border: 1px solid #d2d2d2;
+    border-bottom: #b4b4b4;
+    border-top: #e4e4e4;
+    color: #3a3a3a;
+    cursor: pointer;
+    font-size: 0.929em;
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 4px 5px;
+}
+
+.views_slideshow_thumbnailhover_previous {
+    background: #fff url(../images/buttons-bkg.png) 0 0 repeat-x;
+    border: 1px solid #d2d2d2;
+    border-bottom: #b4b4b4;
+    border-bottom-left-radius: 15px;
+    border-top: #e4e4e4;
+    border-top-left-radius: 15px;
+    color: #3a3a3a;
+    cursor: pointer;
+    font-size: 0.929em;
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 4px 5px 4px 10px;
+}
+
+.views_slideshow_thumbnailhover_main {
+    float: left;
+}
+
+.views_slideshow_thumbnailhover_next {
+    background: #fff url(../images/buttons-bkg.png) 0 0 repeat-x;
+    border: 1px solid #d2d2d2;
+    border-bottom: 1px solid #b4b4b4;
+    border-bottom-right-radius: 15px;
+    border-top: #e4e4e4;
+    border-top-right-radius: 15px;
+    color: #3a3a3a;
+    cursor: pointer;
+    font-size: 0.929em;
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 4px 10px 4px 5px;
+}
+
+.views_slideshow_thumbnailhover_slide {
+    padding-left: 10px;
+}
+
+.views_slideshow_thumbnailhover_teaser_section {
+    border-left: 1px solid #EEEEEE;
+}
+
+/* Home page highlight black block
+--------------------------------------------------*/
+input#mc-embedded-subscribe {
+    background-color: #FE9900;
+    border: medium none;
+    color: #FFFFFF;
+    float: left;
+    font-size: 11px;
+    font-weight: 700;
+    height: 28px;
+    padding: 0;
+    width: 60px;
+}
+
+.atmos-landing-block .view-feature-newsletter-block .views-field-title,
+.atmos-landing-block .view-feature-newsletter-block .views-field-field-headline-short-value {
+    border-top: none;
+}
+
+.atmos-landing-block .view-feature-newsletter-block .views-field-title,
+.atmos-landing-block .view-feature-newsletter-block .views-field-field-headline-short-value,
+.atmos-landing-block .view-feature-newsletter-block .view-an-home-people-1 .views-field-title a,
+.atmos-landing-block .view-feature-newsletter-block .views-field-field-headline-short-value a {
+    color: #FF9900;
+}
+
+.view-feature-newsletter-block {
+    padding: 5px;
+}
+
+.view-feature-newsletter-block form {
+    height: 28px;
+    margin: 0 0 5px;
+    padding: 0;
+    width: 272px;
+}
+
+.view-feature-newsletter-block input#mce-EMAIL {
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: 700;
+    height: 16px;
+    margin: 0;
+    padding: 5px;
+    width: 165px;
+}
+
+.view-feature-newsletter-block .views-field-body {
+    color: #FFFFFF;
+    float: left;
+    line-height: 20px;
+}
+
+.view-feature-newsletter-block .views-field-field-image-fid,
+.view-feature-newsletter-block .views-field-field-thumbnail-fid {
+    background: #333333;
+    float: left;
+    height: auto;
+    margin: 10px;
+    width: 130px;
+}
+
+.view-feature-newsletter-block .views-field-title {
+    float: left;
+    padding: 0 5px;
+    width: 40%;
+}
+
+.view-feature-newsletter-block .views-field-title a,
+.view-feature-newsletter-block .views-field-field-headline-short-value a {
+    color: #FF9900;
+    font-size: 14px;
+}
+
+.view-feature-newsletter-block .view-footer {
+    border-top: 1px solid #666666;
+    clear: both;
+    display: block;
+    height: 70px;
+    padding-top: 10px;
+}
+
+.view-feature-newsletter-block .view-footer label {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 30px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.view-feature-newsletter-block .views-row {
+    height: auto;
+    min-height: 190px;
+    overflow: hidden;
+}
+
+
+/* Atmos panes
+--------------------------------------------------*/
+div.panel-pane {
+    margin-bottom: 10px;
+}
+
+.atmos-landing-block {
+    margin-right: 15px;
+    width: 300px;
+}
+
+.atmos-landing-block .atmos-landing-highlight-block .views-field-field-image {
+    background: #333333;
+    float: left;
+    height: auto;
+    margin: 10px;
+    width: 130px;
+}
+
+.atmos-landing-block .views-field-field-image,
+.atmos-landing-block .views-field-field-image-fid,
+.atmos-landing-block .views-field-field-thumbnail-fid {
+    background-color: #A82626;
+    height: 112px;
+    margin: 0 0 7px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.atmos-landing-block .views-field-field-image img,
+.atmos-landing-block .views-field-field-image-fid img,
+.atmos-landing-block .views-field-field-thumbnail-fid img {
+    margin-top: 2px;
+}
+
+.atmos-landing-block .views-field-title {
+    border-top: 1px solid #CCCCCC;
+    color: #003366;
+    font-size: 16px;
+    margin: 0 0 5px;
+    padding: 7px 0 0;
+}
+
+.atmos-landing-highlight-block .pane-content {
+    background: #333333;
+}
+
+.atmos-landing-highlight-block .pane-content .view-footer,
+.atmos-landing-highlight-block .pane-content .view-footer form,
+.atmos-landing-highlight-block .pane-content .view-footer div {
+    background: #333333;
+}
+
+.atmos-landing-highlight-block .pane-content .views-field-body {
+    margin: 0 10px;
+    float: left;
+}
+
+.atmos-landing-highlight-block .pane-content .views-field-title {
+    background: #333333;
+    float: left;
+    margin: 10px 2px 0 0;
+    width: 130px;
+}
+
+.atmos-landing-highlight-block .pane-content .view-footer #mc_embed_signup {
+    margin: 0 10px 10px;
+}
+
+.atmos-style-links td {
+    padding-top: 7px;
+    vertical-align: top;
+}
+
+.atmos-style-links td.col-1 {
+    border-right: 1px solid #910F0F;
+}
+
+.atmos-style-links td.col-2 {
+    padding-left: 10px;
+}
+
+.atmos-style-links tr.row-first td {
+    padding-top: 0;
+}
+
+.atmos-style-links .views-field-title a {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.panels-flexible-region-inside {
+    padding-left: 0;
+}
+
+.panel-pane-spacing {
+    margin-top: 10px;
+}
+
+/* ATMOS LANDING VIEWS */
+.an-landing td {
+    padding: 15px 30px 0 0;
+}
+
+.an-landing .views-field-title {
+    color: #910F0F;
+    font-weight: 700;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+}
+
+.an-landing .views-field-title a {
+    color: #910F0F;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.an-landing .views-field-field-thumbnail-fid {
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 2px solid #A82626;
+    padding: 0 0 20px;
+}
+
+.an-section div.views-field-body,
+.an-section div.views-field-field-subtitle-value,
+.an-section div.views-field-field-headline-short-value,
+.an-section div.views-field-teaser,
+.an-section div.views-field-view-node {
+    float: right;
+    margin: 0;
+    padding: 10px 10px 0 10px;
+    width: 420px;
+}
+
+.an-section .views-field-field-image-fid,
+.an-section .views-field-field-thumbnail-fid {
+    width: 200px;
+}
+
+.an-section .views-field-title {
+    float: right;
+    margin: 0;
+    padding: 10px 10px 0 10px;
+    width: 420px;
+}
+
+.an-section .views-row {
+    border-top: 2px solid #A82626;
+    clear: both;
+    margin: 0 auto 25px auto;
+    min-height: 110px;
+    width: auto;
+}
+
+.atmos-landing-block .small-title-links a {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.atmos-landing-block .view-footer,
+.atmos-landing-block .view-footer a {
+    background-color: #F5F5F5;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 0 0 1px;
+}
+
+.atmos-landing-block .view-footer p {
+    border-top: 1px solid #CCCCCC;
+    line-height: 16px;
+    margin: 0 0 5px 0;
+    padding: 5px 0 0 0;
+}
+
+.views-field-title a {
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+/* ATMOS LANDING PAGE SLIDESHOW VIEW */
+.view-atmos-landing-slideshow {
+    background-color: black;
+    color: #ffffff;
+    height: 235px;
+    overflow: hidden;
+    width: 980px;
+}
+
+.view-atmos-landing-slideshow .views-field-field-subtitle-value {
+    background-color: black;
+    clear: left;
+    color: #ffffff;
+    float: left;
+    font-size: 16px;
+    line-height: 21px;
+    overflow: hidden;
+    padding: 15px;
+    width: 245px;
+    z-index: 89;
+}
+
+.view-atmos-landing-slideshow .views-field-field-thumbnail-fid {
+    border: 0;
+    height: 235px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    right: -695px;
+    top: 0;
+    width: 665px;
+    z-index: 60;
+}
+
+.view-atmos-landing-slideshow .views-field-title,
+.view-atmos-landing-slideshow .views-field-field-headline-short-value {
+    background-color: black;
+    border-bottom: 3px solid #A42220;
+    color: #ffffff;
+    float: left;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 15px;
+    text-transform: uppercase;
+    width: 245px;
+    z-index: 89;
+}
+
+.view-atmos-landing-slideshow .views-field-title a,
+.view-atmos-landing-slideshow .views-field-field-headline-short-value a {
+    color: #A42220;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding: 0 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.view-atmos-landing-slideshow .views_slideshow_thumbnailhover_div_breakout_teaser {
+    border: 2px solid #a9cade;
+    height: 20px;
+    margin: 0 10px;
+    text-align: center;
+    width: 20px;
+}
+
+.view-atmos-landing-slideshow .views_slideshow_thumbnailhover_div_breakout_teaser:hover {
+    cursor: pointer;
+}
+
+.view-atmos-landing-slideshow .views_slideshow_thumbnailhover_div_breakout_teaser .views-content-promote {
+    color: black;
+}
+
+.view-atmos-landing-slideshow .views_slideshow_thumbnailhover_div_breakout_teaser.activeSlide {
+    background-color: #edc309;
+}
+
+.view-atmos-landing-slideshow .views_slideshow_thumbnailhover_div_breakout_teaser.activeSlide .views-content-promote {
+    color: #edc309;
+}
+
+.view-atmos-landing-slideshow .views_slideshow_thumbnailhover_breakout_teasers {
+    position: absolute;
+    margin: 200px 0 0 70px;
+}
+
+.view-atmos-landing-slideshow .views_slideshow_thumbnailhover_teaser_section {
+    border-left: none;
+}

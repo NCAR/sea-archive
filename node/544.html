@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="../best-practices/code-review.html" />
+<link rel="shortlink" href="544.html" />
+<link rel="shortcut icon" href="../sites/default/themes/sea7/favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>Code Reviews | SEA</title>
+  <style type="text/css" media="all">
+@import url("../modules/system/system.base.css%3Fsc7dt8.css");
+@import url("../modules/system/system.menus.css%3Fsc7dt8.css");
+@import url("../modules/system/system.messages.css%3Fsc7dt8.css");
+@import url("../modules/system/system.theme.css%3Fsc7dt8.css");
+</style>
+<style type="text/css" media="all">
+@import url("../modules/book/book.css%3Fsc7dt8.css");
+@import url("../modules/comment/comment.css%3Fsc7dt8.css");
+@import url("../modules/field/theme/field.css%3Fsc7dt8.css");
+@import url("../modules/node/node.css%3Fsc7dt8.css");
+@import url("../modules/search/search.css%3Fsc7dt8.css");
+@import url("../modules/user/user.css%3Fsc7dt8.css");
+@import url("../modules/forum/forum.css%3Fsc7dt8.css");
+@import url("../sites/all/modules/views/css/views.css%3Fsc7dt8.css");
+</style>
+<style type="text/css" media="all">
+@import url("../sites/all/modules/ctools/css/ctools.css%3Fsc7dt8.css");
+@import url("../sites/default/modules/nice_menus/css/nice_menus.css%3Fsc7dt8.css");
+@import url("../sites/default/modules/nice_menus/css/nice_menus_default.css%3Fsc7dt8.css");
+@import url("../sites/all/modules/eu_cookie_compliance/css/eu_cookie_compliance.css%3Fsc7dt8.css");
+@import url("../sites/default/files/ctools/css/1047b53643519f84cb23d4e7837388d4.css%3Fsc7dt8.css");
+</style>
+<style type="text/css" media="all">
+@import url("../sites/all/themes/atmos/css/atmos_imgcaption.css%3Fsc7dt8.css");
+@import url("../sites/all/themes/atmos/css/atmos_tinymce.css%3Fsc7dt8.css");
+@import url("../sites/default/files/color/sea7-950745b3/colors.css%3Fsc7dt8.css");
+@import url("../sites/all/themes/atmos/css/eu_cookie_compliance_override.css%3Fsc7dt8.css");
+@import url("../sites/all/themes/atmos/css/layout.css%3Fsc7dt8.css");
+@import url("../sites/all/themes/atmos/css/login.css%3Fsc7dt8.css");
+@import url("../sites/all/themes/atmos/css/nice_menus_default.css%3Fsc7dt8.css");
+@import url("../sites/all/themes/atmos/css/style.css%3Fsc7dt8.css");
+@import url("../sites/default/themes/sea7/css/custom.css%3Fsc7dt8.css");
+</style>
+<style type="text/css" media="print">
+@import url("../sites/all/themes/atmos/css/print.css%3Fsc7dt8.css");
+</style>
+
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="https://sea.ucar.edu/sites/all/themes/atmos/css/ie.css?sc7dt8" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i&amp;display=swap&amp;sc7dt8" media="all" />
+  <script type="text/javascript" src="../misc/jquery.js%3Fv=1.4.4"></script>
+<script type="text/javascript" src="../misc/jquery-extend-3.4.0.js%3Fv=1.4.4"></script>
+<script type="text/javascript" src="../misc/jquery-html-prefilter-3.5.0-backport.js%3Fv=1.4.4"></script>
+<script type="text/javascript" src="../misc/jquery.once.js%3Fv=1.2"></script>
+<script type="text/javascript" src="../misc/drupal.js%3Fsc7dt8"></script>
+<script type="text/javascript" src="../sites/default/modules/nice_menus/js/jquery.bgiframe.js%3Fv=2.1"></script>
+<script type="text/javascript" src="../sites/default/modules/nice_menus/js/jquery.hoverIntent.js%3Fv=0.5"></script>
+<script type="text/javascript" src="../sites/default/modules/nice_menus/js/superfish.js%3Fv=1.4.8"></script>
+<script type="text/javascript" src="../sites/default/modules/nice_menus/js/nice_menus.js%3Fv=1.0"></script>
+<script type="text/javascript" src="../sites/all/modules/eu_cookie_compliance/js/jquery.cookie-1.4.1.min.js%3Fv=1.4.1"></script>
+<script type="text/javascript" src="../sites/default/modules/admin_menu/admin_devel/admin_devel.js%3Fsc7dt8"></script>
+<script type="text/javascript" src="../sites/all/modules/google_analytics/googleanalytics.js%3Fsc7dt8"></script>
+<script type="text/javascript" src="../sites/default/files/googleanalytics/js%3Fsc7dt8"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "UA-332815-13", {"groups":"default","anonymize_ip":true});
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/all/themes/atmos/js/site.js%3Fsc7dt8"></script>
+<script type="text/javascript" src="../sites/all/themes/atmos/js/atmos_imgcaption.js%3Fsc7dt8"></script>
+<script type="text/javascript" src="../sites/all/themes/atmos/js/sorttable.js%3Fsc7dt8"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"sea7","theme_token":"3QRDBcgUfi87jwug-iWkY0pSkTAgltII5Fu2DwSZWkg","js":{"0":1,"sites\/all\/modules\/eu_cookie_compliance\/js\/eu_cookie_compliance.min.js":1,"misc\/jquery.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/default\/modules\/nice_menus\/js\/jquery.bgiframe.js":1,"sites\/default\/modules\/nice_menus\/js\/jquery.hoverIntent.js":1,"sites\/default\/modules\/nice_menus\/js\/superfish.js":1,"sites\/default\/modules\/nice_menus\/js\/nice_menus.js":1,"sites\/all\/modules\/eu_cookie_compliance\/js\/jquery.cookie-1.4.1.min.js":1,"sites\/default\/modules\/admin_menu\/admin_devel\/admin_devel.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"https:\/\/sea.ucar.edu\/sites\/default\/files\/googleanalytics\/js?sc7dt8":1,"1":1,"sites\/all\/themes\/atmos\/js\/site.js":1,"sites\/all\/themes\/atmos\/js\/atmos_imgcaption.js":1,"sites\/all\/themes\/atmos\/js\/sorttable.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/default\/modules\/nice_menus\/css\/nice_menus.css":1,"sites\/default\/modules\/nice_menus\/css\/nice_menus_default.css":1,"sites\/all\/modules\/eu_cookie_compliance\/css\/eu_cookie_compliance.css":1,"public:\/\/ctools\/css\/1047b53643519f84cb23d4e7837388d4.css":1,"sites\/all\/themes\/atmos\/css\/atmos_imgcaption.css":1,"sites\/all\/themes\/atmos\/css\/atmos_tinymce.css":1,"sites\/default\/themes\/sea7\/css\/colors.css":1,"sites\/all\/themes\/atmos\/css\/eu_cookie_compliance_override.css":1,"sites\/all\/themes\/atmos\/css\/layout.css":1,"sites\/all\/themes\/atmos\/css\/login.css":1,"sites\/all\/themes\/atmos\/css\/nice_menus_default.css":1,"sites\/all\/themes\/atmos\/css\/style.css":1,"sites\/default\/themes\/sea7\/css\/custom.css":1,"sites\/all\/themes\/atmos\/css\/print.css":1,"sites\/all\/themes\/atmos\/css\/ie.css":1,"\/\/fonts.googleapis.com\/css?family=Ubuntu:400,400i,700,700i\u0026display=swap":1}},"nice_menus_options":{"delay":800,"speed":"slow"},"eu_cookie_compliance":{"cookie_policy_version":"1.0.0","popup_enabled":1,"popup_agreed_enabled":0,"popup_hide_agreed":0,"popup_clicking_confirmation":1,"popup_scrolling_confirmation":0,"popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--default\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n        \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003E\u003Cspan\u003EUCAR\u003C\/span\u003E\u003Cspan\u003E\u00a0uses cookies to make our website function; however,\u00a0\u003C\/span\u003E\u003Cspan\u003EUCAR\u003C\/span\u003E\u00a0\u003Cspan\u003Ecookies do not collect personal information about you. When using our website, you may encounter embedded content, such as YouTube videos and other social media links, that use their own cookies. To learn more about third-party cookies on this website, and to set your cookie preferences,\u00a0\u003C\/span\u003E\u003Cspan\u003Eclick\u003C\/span\u003E\u003C\/p\u003E              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003Ehere.\u003C\/button\u003E\n          \u003C\/div\u003E\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022\u0022\u003E\n            \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EACKNOWLEDGE\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--default\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n        \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EWe use cookies on this site to enhance your user experience\u003C\/h2\u003E\u003Cp\u003EBy tapping the Accept button, you agree to us doing so.\u003C\/p\u003E              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003Ehere.\u003C\/button\u003E\n          \u003C\/div\u003E\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022\u0022\u003E\n            \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EACKNOWLEDGE\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","mobile_breakpoint":"768","popup_html_agreed":"\u003Cdiv\u003E\n  \u003Cdiv class=\u0022popup-content agreed\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EThank you for accepting cookies\u003C\/h2\u003E\u003Cp\u003EYou can now hide this message or find out more about cookies.\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022hide-popup-button eu-cookie-compliance-hide-button\u0022\u003EHide\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button-thank-you\u0022 \u003Ehere.\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"https:\/\/www.ucar.edu\/cookie-other-tracking-technologies-notice","popup_link_new_window":1,"popup_position":null,"fixed_top_position":1,"popup_language":"en","store_consent":false,"better_support_for_screen_readers":0,"reload_page":0,"domain":"","domain_all_sites":0,"popup_eu_only_js":0,"cookie_lifetime":"365","cookie_session":false,"disagree_do_not_show_popup":0,"method":"default","allowed_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EWe use cookies on this site to enhance your user experience\u003C\/h2\u003E\u003Cp\u003EYou have given your consent for us to set cookies.\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","withdraw_enabled":false,"withdraw_button_on_info_popup":0,"cookie_categories":[],"cookie_categories_details":[],"enable_save_preferences_button":1,"cookie_name":"","cookie_value_disagreed":"0","cookie_value_agreed_show_thank_you":"1","cookie_value_agreed":"2","containing_element":"body","automatic_cookies_removal":true,"close_button_action":"close_banner"},"googleanalytics":{"account":["UA-332815-13"],"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-544 node-type-page" >
+<div id="skip-link">
+  <a href="544.html#main-content" class="element-invisible element-focusable">Skip to main content</a>
+</div>
+<!-- TOP NAV -->
+<div id="header-wrap">
+    <div id="navigation">
+        <div class="align-center-wrapper">
+
+            <div class="region region-navigation">
+    <div id="block-nice-menus-1" class="block block-nice-menus">
+
+    
+  <div class="content">
+    <ul class="nice-menu nice-menu-down nice-menu-main-menu" id="nice-menu-1"><li class="menu-385 menu-path-front first odd "><a href="../index.html" title="Homepage">Blog</a></li>
+<li class="menu-3474 menu-path-taxonomy-term-1964  even "><a href="../category/event-category/seminar.html" title="List view of past and future seminars">Seminars</a></li>
+<li class="menu-3475 menu-path-taxonomy-term-1965  odd "><a href="../category/event-category/class.html" title="List of past and future classes">Classes</a></li>
+<li class="menu-8006 menuparent  menu-path-node-1220  even "><a href="../conference/sea-conference-page-list.html">SEA Conference</a><ul><li class="menu-8065 menu-path-node-1253 first odd "><a href="../conference/2024.html">2024</a></li>
+<li class="menu-8064 menu-path-node-1252  even "><a href="../conference/2023.html">2023</a></li>
+<li class="menu-8063 menu-path-node-1251  odd "><a href="../conference/2022.html">2022</a></li>
+<li class="menu-8060 menu-path-node-1248  even "><a href="../conference/2021.html">2021</a></li>
+<li class="menu-8005 menu-path-node-1219  odd "><a href="../conference/2020.html">2020</a></li>
+<li class="menu-7857 menu-path-node-1101  even "><a href="../conference/2019.html">2019</a></li>
+<li class="menu-7848 menu-path-node-993  odd "><a href="../conference/2018.html">2018</a></li>
+<li class="menu-7740 menu-path-node-982  even "><a href="../conference/2017.html">2017</a></li>
+<li class="menu-7724 menu-path-node-884  odd "><a href="../conference/2016.html">2016</a></li>
+<li class="menu-7719 menu-path-node-747  even "><a href="../conference/2015.html" title="SEA Software Engineering Conference 2015">2015</a></li>
+<li class="menu-7673 menu-path-node-704  odd "><a href="../conference/2014.html" title="SEA Software Engineering Conference 2014">2014</a></li>
+<li class="menu-5088 menu-path-node-618  even "><a href="../conference/2013.html" title="SEA Software Engineering Conference 2013">2013</a></li>
+<li class="menu-3976 menu-path-node-564  odd last"><a href="../conference/2012.html" title="SEA Software Engineering Conference 2012">2012</a></li>
+</ul></li>
+<li class="menu-3720 menu-path-node-533  odd "><a href="../best-practices/home.html" title="Best Practices">Best Practices</a></li>
+<li class="menu-3473 menu-path-search-google  even "><a href="../search/google.html" title="Google search within SEA website">Search</a></li>
+<li class="menu-3486 menu-path-node-513  odd "><a href="../page/mailing-list.html" title="Mailing List">MailingList</a></li>
+<li class="menu-7720 menu-path-node-865  even "><a href="../calendar.html">SEA calendar</a></li>
+<li class="menu-3476 menuparent  menu-path-node-483  odd last"><a href="../sea.html" title="About Software Engineering Assembly">About</a><ul><li class="menu-7554 menu-path-node-483 first odd "><a href="../sea.html" title="">SEA</a></li>
+<li class="menu-7553 menu-path-node-485  even "><a href="../committees.html">Committees</a></li>
+<li class="menu-7552 menu-path-node-484  odd last"><a href="../bylaws.html">Bylaws</a></li>
+</ul></li>
+</ul>
+  </div>
+</div>
+  </div>
+        </div>
+    </div><!-- end navbar -->
+
+    <div id="header" class="clear-block>">
+        <div class="section clearfix align-center-wrapper">
+            <div id="header-sub-nav"></div>
+
+                        <div id="logo-floater">
+                  <a href="../index.html"
+                     title="Home" rel="home" id="logo">
+                      <img src="../sites/default/files/logo_3.png"
+                           alt="Home"/>
+                  </a>
+              </div>
+          
+                        <div id="name-and-slogan">
+
+                                                          <div id="site-name" class="element-invisible">
+                            <strong>
+                                <a href="../index.html"
+                                   title="Home" rel="home"><span>SEA</span></a>
+                            </strong>
+                        </div>
+                                  
+                                    <div class="nsf-logo">
+                        <img src="../sites/all/themes/atmos/images/nsf.png" alt="NCAR is sponsored by the National Science Foundation"/>
+                    </div><!-- .slogan -->
+                              </div> <!-- /#name-and-slogan -->
+          
+
+                  </div> <!-- /.section -->
+    </div> <!-- /#header -->
+</div> <!-- /#header-wrap -->
+
+
+<div id="wrap">
+    <div id="container" class="clear-block">
+
+
+                <div class="internal-header" class="clear-block">
+              <div class="breadcrumbs"><div class="breadcrumb"><a href="../index.html">Home</a> » Code Reviews</div></div>
+              <h1></h1>
+          </div>
+      
+        <div id="center-wrapper" class="clear-block">
+
+          
+          
+            <div id="center">
+                <div id="squeeze">
+                    <div class="right-corner">
+                        <div class="left-corner">
+
+                                                    <div id="tabs-wrapper" class="clear-block"></div>                                                    
+                                                    <h1 class="title with-tabs">Code Reviews</h1><div id="titlebar"></div>
+                            <a id="main-content"></a>
+                            <div class="clear-block">
+                                <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-544" class="node node-page node-full clearfix">
+
+      
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p><span style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; line-height: 17px;"> </span></p><h3 style="line-height: normal; font-weight: bold; font-size: 15pt; margin-top: 28px; margin-right: 0px; margin-bottom: 4px; margin-left: 0px; color: #003366; padding: 0px;">What is a code review?</h3><p style="font-size: 10pt; line-height: 13pt; color: #000000; font-weight: normal; margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">A code review (sometimes called a program inspection) is a formal process where a software developer presents the code he or she has written to other software engineers who are familiar with the project. The code is scrutinized carefully to identify potential bugs, design problems, non-compliance with project standards, inconsistencies, and any other problems in the code.</p><h3 style="line-height: normal; font-weight: bold; font-size: 15pt; margin-top: 28px; margin-right: 0px; margin-bottom: 4px; margin-left: 0px; color: #003366; padding: 0px;"><a name="Codereviews-Whyusecodereviews%3F" id="Codereviews-Whyusecodereviews%3F"></a>Why use code reviews?</h3><ul class="alternate" style="font-size: 10pt; line-height: 13pt; list-style-type: disc;" type="square"><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">Studies have shown that code reviews are a very cost-effective way of improving software quality.</li><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">Code reviews will often disclose problems that, if not corrected early, would lead to delays during code integration and final testing.</li><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">Code reviews also provide mentoring, enabling junior members of the programming staff to learn the practices of the experienced team members.</li><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">Coding standards of an organization are applied and enforced through code reviews.<br />Code reviews will generally add a few days to the code development process, because it takes time to prepare and present a code review. If significant defects are found during a code review, the code development time will need to be increased to allow for correcting these defects. However it is much more cost-effective to make those corrections early in the development process, rather than waiting until the defects have been disclosed during system testing.<h3 style="line-height: normal; font-weight: bold; font-size: 15pt; margin-top: 28px; margin-right: 0px; margin-bottom: 4px; margin-left: 0px; color: #003366; padding: 0px;"><a name="Codereviews-Arecodereviewsalwaysnecessary%3F" id="Codereviews-Arecodereviewsalwaysnecessary%3F"></a>Are code reviews always necessary?</h3><p style="font-size: 10pt; line-height: 13pt; color: #000000; font-weight: normal; padding: 0px; margin: 0px;">Any project with more than one code developer will benefit from code reviews. In some cases a code review should always be required:</p></li><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">If a lot of new code is being written.</li><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">If some of the developers are new to the project.</li><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">If some of the developers are inexperienced.</li><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">If the project involves the development of many different interacting modules.<h3 style="line-height: normal; font-weight: bold; font-size: 15pt; margin-top: 28px; margin-right: 0px; margin-bottom: 4px; margin-left: 0px; color: #003366; padding: 0px;"><a name="Codereviews-Therearesignificanthurdlestorequiringcodereviewsinaproject%2Csuchas%3A" id="Codereviews-Therearesignificanthurdlestorequiringcodereviewsinaproject%2Csuchas%3A"></a>There are significant hurdles to requiring code reviews in a project, such as:</h3></li><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">Few programmers like to have others look for defects in their work. It can be embarrassing, especially for programmers who are new to a project. Programmers will often avoid or postpone code reviews if they are not explicitly required.</li><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">Code reviews come at a time near the completion of code-writing, when there is often considerable pressure to complete the development. Management may be reluctant to spend the time for code reviews if they would appear to lengthen the schedule.<br />These hurdles (e.g., new programmers and pressure to complete) are, however, strong indicators of the need for code review.<br />If the code being developed involves the reuse of existing software, it may not be necessary to review the code in detail. In some software development processes there may be other processes that replace or avoid code reviews. For example, in Extreme Programming (<a class="external-link" style="color: #003366;" rel="nofollow" href="http://www.extremeprogramming.org/">http://www.extremeprogramming.org</a>), pair-programming can achieve the same objectives as code reviews. If code reviews are omitted from a project, there should be a clearly stated reason why they are not necessary.<h3 style="line-height: normal; font-weight: bold; font-size: 15pt; margin-top: 28px; margin-right: 0px; margin-bottom: 4px; margin-left: 0px; color: #003366; padding: 0px;"><a name="Codereviews-Howtoconductacodereview." id="Codereviews-Howtoconductacodereview."></a>How to conduct a code review.</h3></li><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">First, it is important to have a team environment that is conducive to having good code reviews. Management must require code reviews by all developers, and allow for adequate time in the schedule. Coding standards and standards for conducting code reviews should be available and accepted by all team members. It must be understood that a code review must provide constructive criticism, in a way that will improve the software of the project. The code review is never to be used as a means of evaluating the developer.</li><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">A small number of developers (say 3 to 5) should be invited to the code review. They should be developers whose own work is close to the code being reviewed, and who are familiar with the requirements of the code. The code to be reviewed should be small enough to be examined closely in a one-to-two hour meeting.</li><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">The code developer should distribute copies of the code several days in advance to the attendees, with a complete statement of the requirements. This code should be up to date and syntactically correct. Printed copies of the code should include line numbers for reference. The attendees should examine the code in advance of the meeting, prepared to formulate any questions and concerns to discuss at the review.</li><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">During the code review, the author of the code should provide an overview, stating the purpose or requirements of the code and describing how it operates. It is very valuable to provide high-level UML diagrams, showing how the code fits in the overall design, as well as lower-level UML diagrams showing the interaction of the various components of the code being reviewed.</li><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">The code reviewers should look in detail at the code to ensure it meets project standards and to identify potential bugs. They should provide specific constructive criticism for improving the code, such as changes to interfaces or data structures. General criticisms should be avoided. The author of the code should listen openly to all concerns that are raised and be prepared to discuss the code in detail, especially parts that are particularly complex or where the interaction with other modules is critical to the correct operation of the code.</li><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">At the completion of the meeting there should be a list of action items; that is, a list of code and/or design changes that are required. Code reviewers should be available for follow-up discussions with the code author, to clarify the issues they raised during the meeting. If the recommended changes are extensive, an additional code review should be scheduled, after the changes have been implemented.<h3 style="line-height: normal; font-weight: bold; font-size: 15pt; margin-top: 28px; margin-right: 0px; margin-bottom: 4px; margin-left: 0px; color: #003366; padding: 0px;"><a name="Codereviews-Wheretogetmoreinformationoncodereviews." id="Codereviews-Wheretogetmoreinformationoncodereviews."></a>Where to get more information on code reviews.</h3></li><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">An excellent discussion of code reviews is in Wikipedia (e.g. see <a class="external-link" style="color: #003366;" rel="nofollow" href="http://en.wikipedia.org/wiki/Code_review">http://en.wikipedia.org/wiki/Code_review</a>). Wikipedia includes several links, including tools that are helpful in code reviewing.</li><li style="font-size: 10pt; line-height: 13pt; padding: 0px; margin: 0px;">A good textbook is I. Sommerville, <em>Software Engineering</em>. Note that Sommerville refers to code reviews as program inspections .</li></ul><p> </p></div></div></div>  </div>
+
+  
+  
+</div>
+  </div>
+</div>
+  </div>
+                            </div>
+                            <div class="feed_icons">
+                                                          </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+          
+          
+        </div> <!-- /center-wrapper -->
+
+      
+      
+                <div class="footernav">
+              <div class="region region-footer">
+    <div id="block-block-44" class="block block-block">
+
+    
+  <div class="content">
+    <!-- OrgNavFooter Script -->
+<script type="text/javascript">// <![CDATA[
+// CUSTOM VARIABLES
+var contactLink = "/contact";     // enter your Contact/Feedback link or mailto: link
+var hideOrgNav = false;        // hide the entire OrgNav from view
+var hideFooter = false;          // hide the entire OrgFooter from view
+var hideNSF = true;               // hide the NSF disclaimer
+var footerColor = '#fff';       // hex color of the footer font including the #
+
+// DO NOT EDIT BELOW THIS POINT
+var jsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+if(typeof jQuery === "undefined"){
+  document.write("<scr"+"ipt src='" + jsHost + "ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js' type='text/javascript'><" + "/scr" + "ipt>");
+}
+document.write("<scr" + "ipt src='" + jsHost + "www2.ucar.edu/js/orgnav' type='text/javascript'><" + "/scr" + "ipt>");
+// ]]></script>
+<noscript><iframe frameborder="0" width="100%" src="http://www2.ucar.edu/sites/default/modules/custom/ucar_comm_site/includes/noscript.php"></iframe></noscript><!-- END OrgNavFooter Script -->  </div>
+</div>
+  </div>
+          </div> <!-- /#footernav -->
+      
+    </div><!-- /#container -->
+</div> <!-- /#wrap -->
+<!-- /layout-->
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.eu_cookie_compliance_cookie_name = "";
+//--><!]]>
+</script>
+<script type="text/javascript" defer="defer" src="../sites/all/modules/eu_cookie_compliance/js/eu_cookie_compliance.min.js%3Fsc7dt8"></script>
+</body>
+</html>

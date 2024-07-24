@@ -1,0 +1,214 @@
+/*
+ * Style sheet for Drupal 7 Atmos theme integration with the color module
+ *
+ * NOTE: I intentionally did not use hash mark with the RGB values within
+ * the notes because that will cause the color module to send error messages.
+ *
+ * Header Top = #013a57
+ * Header Bottom = #d75900
+ * Title and slogan = #fffeff
+ * Main Background = #ffffff
+ * Text Color = #333333
+ * Link Color = #d75900
+ * Light Block Background = #5e5e5e
+ * Medium Block Background = #4a4a4a
+ * Dark Block Background = #333333
+ * Block link color = #d75900
+ * Footer Background = #e3e4e6
+ * Footer Text Color = #666666
+ * Footer Link Color = #d75900
+ * Block Text Color = #eeeeee
+ *
+ * Important to know that the color module will generate a new css file
+ * locate at sites/default/files/color/theme_name-randomhash
+ * The color module looks for the color values of css classes (hexadecimal values)
+ * in this style sheet and compares them to the default color values set in the
+ * color.inc file - $info[schemes][default][colors] values
+ *
+ * Example: if $info[schemes][default][colors][top] us set to RGB af2220, any css class defined
+ * below with a color, be it background, background-color, color, etc, set to  RGB af2220
+ * will be replaced with the new "top", or "Header top" field, color set by the user
+ * using the color admin page.
+ *
+ * To avoid unwanted color changes, you can slightly modify the hexadecimal value
+ * of colors, for example use fffeff rather than ffffff
+ */
+
+/* ---------- Color Module Styles ----------- */
+a,
+a:active,
+a:hover,
+a:focus {
+  color: #d75900;
+}
+
+body,
+body.overlay {
+  color: #333333;
+}
+
+h2,
+h2 a {
+  color: #d75900;
+}
+
+ul.nice-menu a:hover {
+  background: #013a57;
+}
+
+ul.nice-menu li ul {
+  background-color: #d75900;
+}
+
+#center-wrapper,
+#squeeze {
+  background-color: #ffffff;
+}
+
+#center-wrapper .region-content h2 {
+  color: #d75900;
+}
+
+#center-wrapper .sidebar .block {
+  background-color: #5e5e5e;
+  color: #eeeeee;
+}
+
+#center-wrapper .sidebar .block.darkblock {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+#center-wrapper .sidebar .block.lightblock {
+  background-color: #5e5e5e;
+}
+
+#center-wrapper .sidebar .block.mediumblock {
+  background-color: #4a4a4a;
+}
+
+#header {
+  background-color: #013a57;
+}
+
+#header .block-menu li {
+  background: none !important;
+  border-right: 2px solid #013a57;
+}
+
+#header .block-menu li a.active-trail {
+  color: #013a57;
+}
+
+#header-sub-nav {
+  background-color: #d75900;
+}
+
+.breadcrumbs a {
+  color: #d75900;
+}
+
+#main-wrapper,
+#main-menu-links li a.active,
+#main-menu-links li.active-trail a,
+#page {
+  background-color: #ffffff;
+}
+
+#name-and-slogan,
+#name-and-slogan a,
+#secondary-menu-links li a,
+.region-header,
+.region-header a,
+.region-header li a.active {
+  color: #fffeff;
+}
+
+#titlebar {
+  border-bottom: 2px solid #d75900;
+}
+
+#triptych-columns .triptych_three a,
+#triptych-columns a,
+.sidebar li a {
+  color: #d75900;
+}
+
+.atmos_imgcaption,
+.ucar_imgcaption {
+  border-bottom: 2px solid #013a57;
+  border-top: 2px solid #013a57;
+}
+
+.atmos-landing-block .views-field-field-image,
+.atmos-landing-block .views-field-field-image-fid,
+.atmos-landing-block .views-field-field-thumbnail-fid {
+  background-color: #013a57;
+}
+
+.atmos-landing-block .view-footer a {
+  color: #d75900;
+}
+
+.comment .comment-arrow {
+  border-color: #ffffff;
+}
+
+.contact-name {
+  color: #d75900;
+}
+
+.darkblock,
+.triptych_column.triptych_left {
+  background-color: #333333;
+}
+
+.footernav {
+  color: #666666;
+  background-color: #e3e4e6;
+}
+
+.footernav #orgFooter a,
+.footernav a {
+  color: #d75900;
+}
+
+.lightblock,
+.triptych_column.triptych_center {
+  background-color: #5e5e5e;
+}
+
+.mediumblock,
+.triptych_column.triptych_right {
+  background-color: #4a4a4a;
+}
+
+.tabs ul.primary li a.active {
+  background-color: #ffffff;
+}
+
+.tabs ul.primary li.active a {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.title {
+  color: #d75900;
+}
+
+.triptych_two,
+.triptych_three {
+  color: #eeeeee;
+}
+
+.triptych_two h2 {
+  border-bottom: 2px solid #4a4a4a;
+}
+
+.triptych_three h2 {
+  border-bottom: 2px solid #5e5e5e;
+}
+
+.views-field-title a {
+  color: #d75900;
+}

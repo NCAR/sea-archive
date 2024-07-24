@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://sea.ucar.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>SEA - Sea Seminars</title>
+ <link>https://sea.ucar.edu/taxonomy/term/1976</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Updates to Fortran 2008</title>
+ <link>https://sea.ucar.edu/forums/updates-fortran-2008</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Dan Nagle recently started working as a user consultant in CISL. With 40  years of experience in Fortran and parallel computing, Dan is now helping our users with high performance computing (HPC), vector and parallel Fortran, porting codes to new platforms, and designing and implementing parallelism. &lt;/p&gt;
+
+&lt;p&gt;Dan has been teaching people to program with coarrays since 1998, and he recently completed his Ph.D. in Computational Science with an emphasis in HPC.  &lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;&lt;p&gt;&lt;strong&gt;Please provide your input here to the International Standards Organization&#039;s (ISO) process to extend the Fortran 2008 standard.  &lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forums/sea-seminars&quot;&gt;Sea Seminars&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
+ <pubDate>Wed, 18 Jan 2012 18:34:15 +0000</pubDate>
+ <dc:creator>siliu</dc:creator>
+ <guid isPermaLink="false">575 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/forums/updates-fortran-2008#comments</comments>
+</item>
+<item>
+ <title>Steve Easterbrook seminar?</title>
+ <link>https://sea.ucar.edu/forums/steve-easterbrook-seminar</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Steve Easterbrook does research in software engineering for climate models, and he often visits NCAR. Perhaps we could schedule him for a seminar during one of his visits? For more info on Steve: &lt;/p&gt;
+&lt;p&gt;* &lt;a href=&quot;http://www.cs.toronto.edu/~sme/&quot;&gt;http://www.cs.toronto.edu/~sme/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;* &lt;a href=&quot;http://www.easterbrook.ca/steve/&quot;&gt;http://www.easterbrook.ca/steve/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forums/sea-seminars&quot;&gt;Sea Seminars&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 17 Dec 2010 16:49:39 +0000</pubDate>
+ <dc:creator>trey</dc:creator>
+ <guid isPermaLink="false">524 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/forums/steve-easterbrook-seminar#comments</comments>
+</item>
+<item>
+ <title>Kanban URL</title>
+ <link>https://sea.ucar.edu/forums/kanban-url</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Here&#039;s a URL for information on Kanban as it applies to software development. As a bonus, it has information on Scrum as well.
+
+    &lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.infoq.com/minibooks/kanban-scrum-minibook &quot;&gt;http://www.infoq.com/minibooks/kanban-scrum-minibook
+&lt;/a&gt;&lt;/p&gt;&lt;p&gt;
+You&#039;ll have to register with InfoQ to get a free download. It was worth 
+it to me.
+
+--Steve Emmerson&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forums/sea-seminars&quot;&gt;Sea Seminars&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 19 Nov 2010 18:55:16 +0000</pubDate>
+ <dc:creator>emmerson</dc:creator>
+ <guid isPermaLink="false">522 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/forums/kanban-url#comments</comments>
+</item>
+<item>
+ <title>Code Review</title>
+ <link>https://sea.ucar.edu/forums/code-review</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;After &lt;a href=&quot;https://sea.ucar.edu/event/best-se-practices-eol&quot;&gt;yesterday&#039;s seminar&lt;/a&gt;, we discussed code reviews. I mentioned that I remembered from a &lt;a href=&quot;https://sea.ucar.edu/event/using-software-toilet-plungers&quot;&gt;previous seminar&lt;/a&gt; some useful tools for the job, but I didn&#039;t use those tools. They are mentioned on the &lt;a href=&quot;https://docs.google.com/present/view?id=aq2tnf2qg9t_224d9f7kv4k&quot;&gt;slides&lt;/a&gt; 13 and 14.&lt;/p&gt;&lt;p&gt;The tools are &lt;a href=&quot;http://www.reviewboard.org/&quot;&gt;ReviewBoard&lt;/a&gt; and &lt;a href=&quot;http://howsmycode.com/&quot;&gt;How&#039;s my code&lt;/a&gt;. We&#039;d love to hear from people that actually used them.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forums/sea-seminars&quot;&gt;Sea Seminars&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 19 Nov 2010 17:25:10 +0000</pubDate>
+ <dc:creator>ddvento</dc:creator>
+ <guid isPermaLink="false">521 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/forums/code-review#comments</comments>
+</item>
+</channel>
+</rss>

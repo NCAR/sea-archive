@@ -1,0 +1,139 @@
+/*----------primary links---located in header----------*/
+#menu {
+    color: #ffffff;
+    height: 30px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 10;
+}
+
+ul.nice-menu {
+    list-style: none;
+    margin: 1px 0 0 0;
+    padding: 0;
+}
+
+ul.nice-menu,
+ul.nice-menu ul {
+    z-index: 95;
+}
+
+ul.nice-menu a {
+    color: #ffffff;
+    padding: 9px 12px 11px 10px;
+}
+
+ul.nice-menu a:hover {
+    border: none;
+    text-decoration: underline;
+}
+
+ul.nice-menu li {
+    background-image: none;
+    border-top: 0;
+    float: left;
+    margin: 0;
+    padding-left: 0;
+}
+
+ul.nice-menu li ul {
+    border-bottom: 2px solid #000000;
+    font-size: 8pt;
+    line-height: 10pt;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+ul.nice-menu ul,
+#header-region ul.nice-menu ul {
+    border: 0;
+    left: -1px;
+    top: 38px;
+    margin-right: 0;
+}
+
+ul.nice-menu ul li {
+    width: 23.0em;
+}
+
+#header-region ul.nice-menu li {
+    margin: 0;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+#header-region ul.nice-menu ul {
+    top: 1.7em;
+}
+
+#navigation ul.nice-menu ul {
+    margin-top: 1px;
+}
+
+/******************************
+HORIZONTAL (down) menus
+******************************/
+ul.nice-menu-down {
+    border: 0;
+    float: left;
+}
+
+ul.nice-menu-down li li {
+    border-top: 0;
+}
+
+ul.nice-menu-down li li.menuparent {
+    background: url(../images/menu_downarrow_gray.png) right center no-repeat;
+}
+
+ul.nice-menu-down li li.menuparent:hover,
+ul.nice-menu-down li li.over {
+    background: #44a2cb url(../images/menu_downarrow_gray.png) right center no-repeat;
+}
+
+ul.nice-menu-down li ul li ul {
+    left: 23.0em;
+    top: 0;
+}
+
+ul.nice-menu-down ul {
+    left: 0;
+}
+
+ul.nice-menu-down ul li {
+    clear: both;
+}
+
+ul.nice-menu-down .menuparent a {
+    color: #ffffff;
+    padding-right: 16px;
+}
+
+/******************************
+VERTICAL (left/right) menus
+******************************/
+ul.nice-menu-left a,
+ul.nice-menu-left ul a {
+    padding-left: 14px;
+}
+
+ul.nice-menu-left li ul {
+    left: -12.65em;
+    top: -1px;
+    width: 12.5em;
+}
+
+ul.nice-menu-left li ul li ul {
+    left: -12.65em;
+    top: -1px;
+    width: 12.5em;
+}
+
+ul.nice-menu-right ul ul {
+    left: 12.5em;
+    top: -1px;
+    width: 12.5em;
+}

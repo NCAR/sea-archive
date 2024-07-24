@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://sea.ucar.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>SEA - Security</title>
+ <link>https://sea.ucar.edu/taxonomy/term/1984</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>WAG Web Security Resources</title>
+ <link>https://sea.ucar.edu/forums/wag-web-security-resources</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The Web Advisory Group has a &lt;a href=&quot;https://wiki.ucar.edu/display/wag/Web+Security&quot;&gt;UCAR Web Security&lt;/a&gt; area published on its wiki with links to great resources like the &lt;a href=&quot;http://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project&quot;&gt;OWASP Top 10 Exploits&lt;/a&gt; (updated every year), educational tools like the presentatioins from U&lt;a href=&quot;https://wiki.ucar.edu/display/wag/UCAR+Web+Application+Security+Training+Materials&quot;&gt;CAR&#039;s Web Application Security Training&lt;/a&gt;, Google&#039;s &lt;a href=&quot;http://google-gruyere.appspot.com/&quot;&gt;Gruyere&lt;/a&gt; project and much more.&lt;/p&gt;&lt;p&gt;Check out all the resources at:&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://wiki.ucar.edu/display/wag/Web+Security&quot;&gt;https://wiki.ucar.edu/display/wag/Web+Security&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forums/other-topics/security&quot;&gt;Security&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
+ <pubDate>Mon, 25 Oct 2010 18:22:47 +0000</pubDate>
+ <dc:creator>mstobbs</dc:creator>
+ <guid isPermaLink="false">516 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/forums/wag-web-security-resources#comments</comments>
+</item>
+</channel>
+</rss>

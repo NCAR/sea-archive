@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://sea.ucar.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>SEA - Tools</title>
+ <link>https://sea.ucar.edu/taxonomy/term/1986</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Distributed Version Control Systems</title>
+ <link>https://sea.ucar.edu/forums/distributed-version-control-systems</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Distributed Version Control Systems (DVCS) like &lt;a href=&quot;http://git-scm.com/&quot;&gt;Git&lt;/a&gt; and &lt;a href=&quot;http://mercurial.selenic.com/&quot;&gt;Mercurial&lt;/a&gt; are growing in popularity among software engineers used to more centralized version control systems like CVS and Subversion. &lt;a href=&quot;http://github.com/&quot;&gt;GitHub&lt;/a&gt; and &lt;a href=&quot;http://bitbucket.org/&quot;&gt;BitBucket&lt;/a&gt; (acquired by Atlassian in 2010) are analogous to SourceForge but based on Git and Mercurial respectively. The primary advantage of the DVCS approach is more powerful branching and merging which are notoriously problematic on more traditional source control systems.&lt;/p&gt;&lt;p&gt;Here&#039;s an interesting tutorial on &lt;a href=&quot;http://hginit.com/&quot;&gt;Re-educating yourself for a move from Subversion to Mercurial&lt;/a&gt; that provides a good sense of what it means to adopt a distributed approach to source control.&lt;/p&gt;&lt;p&gt;The WEG currently hosts a Subversion service and is considering hosting a DVCS in the future if there is demand for it.&lt;/p&gt;&lt;p&gt;What are your thoughts or experiences on this topic?&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forums/other-topics/tools&quot;&gt;Tools&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
+ <pubDate>Mon, 25 Oct 2010 21:04:59 +0000</pubDate>
+ <dc:creator>mstobbs</dc:creator>
+ <guid isPermaLink="false">518 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/forums/distributed-version-control-systems#comments</comments>
+</item>
+<item>
+ <title>Atlassian Developer Products</title>
+ <link>https://sea.ucar.edu/forums/atlassian-developer-products</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;&lt;a href=&quot;http://www.atlassian.com/software/development-tools.jsp&quot;&gt;Atlassian&lt;/a&gt; is a vendor of a suite of tools for development teams that includes the following products, many of which integrate with each other. I have negotiated a free community license to the entire line of Atlassian products based on UCAR&#039;s non-profit status and public domain approach to software distribution. You can download any of these products and try them for 30 days to see if they make sense for your work. To get license keys for any of these products for ongoing use at UCAR, email me at &lt;a href=&quot;mailto:mstobbs@ucar.edu&quot;&gt;mstobbs@ucar.edu&lt;/a&gt;. The Web Engineering Group (WEG) hosts Confluence and JIRA instances and you are welcome to ask for wikis or JIRA projects by submitting a work request to &lt;a href=&quot;https://cislcustomersupport.ucar.edu&quot;&gt;cislcustomersupport.ucar.edu&lt;/a&gt;.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;JIRA - issue tracker&lt;/li&gt;&lt;li&gt;Greenhopper - agile project management inside JIRA&lt;/li&gt;&lt;li&gt;Confluence - powers the UCAR wiki&lt;/li&gt;&lt;li&gt;Fisheye - visually explore your source repository&lt;/li&gt;&lt;li&gt;Crucible - code review&lt;/li&gt;&lt;li&gt;Clover - Java code coverage/test optimization&lt;/li&gt;&lt;li&gt;Bamboo - continuous integration&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;For more information about these products, see &lt;a href=&quot;http://www.atlassian.com/software/development-tools.jsp&quot;&gt;Atlassian software development tools&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forums/other-topics/tools&quot;&gt;Tools&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
+ <pubDate>Mon, 25 Oct 2010 20:07:44 +0000</pubDate>
+ <dc:creator>mstobbs</dc:creator>
+ <guid isPermaLink="false">517 at https://sea.ucar.edu</guid>
+ <comments>https://sea.ucar.edu/forums/atlassian-developer-products#comments</comments>
+</item>
+</channel>
+</rss>
